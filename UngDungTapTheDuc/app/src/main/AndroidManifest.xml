@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ungdungtaptheduc">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UngDungTapTheDuc">
+        <activity android:name=".WebViewActivity"></activity>
+        <activity android:name=".RelaxActivity" />
+        <activity android:name=".NgayTapHitDatActivity" />
+        <activity android:name=".NgayTapGapBungActivity" />
+        <activity android:name=".NgayTapSquatActivity" />
+        <activity android:name=".NgayNhayDayActivity" />
+        <activity android:name=".NgayNangTaActivity" />
+        <activity android:name=".NgayTapPlankActivity" />
+        <activity android:name=".ui.DetailTheDuc.DetailNangTa" />
+        <activity
+            android:name=".ui.home.TapTa"
+            android:label="@string/title_activity_tap_ta"
+            android:theme="@style/Theme.UngDungTapTheDuc.NoActionBar" />
+        <activity android:name=".ui.DetailTheDuc.DetailNhayDay" />
+        <activity
+            android:name=".ui.home.NhayDay"
+            android:label="@string/title_activity_nhay_day"
+            android:theme="@style/Theme.UngDungTapTheDuc.NoActionBar" />
+        <activity android:name=".ui.DetailTheDuc.DetailPlank" />
+        <activity
+            android:name=".ui.home.Plank"
+            android:label="@string/title_activity_plank"
+            android:theme="@style/Theme.UngDungTapTheDuc.NoActionBar" />
+        <activity android:name=".ui.DetailTheDuc.DetailSquat2" />
+        <activity android:name=".ui.DetailTheDuc.DetailSquat" />
+        <activity
+            android:name=".ui.home.Squat"
+            android:label="@string/title_activity_squat"
+            android:theme="@style/Theme.UngDungTapTheDuc.NoActionBar" />
+        <activity android:name=".ui.DetailTheDuc.DetailGapBung2" />
+        <activity android:name=".ui.DetailTheDuc.DetailGapBung" />
+        <activity
+            android:name=".ui.home.GapBung"
+            android:label="@string/title_activity_gap_bung"
+            android:theme="@style/Theme.UngDungTapTheDuc.NoActionBar" />
+        <activity android:name=".ui.DetailTheDuc.DetailHitDat3" />
+        <activity android:name=".ui.DetailTheDuc.DetailHitDat2" />
+        <activity android:name=".ui.DetailTheDuc.DetailHitDat" />
+        <activity
+            android:name=".ui.home.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.UngDungTapTheDuc.NoActionBar" />
+        <activity
+            android:name=".ui.home.HitDat"
+            android:label="@string/title_activity_hit_dat"
+            android:theme="@style/Theme.UngDungTapTheDuc.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.UngDungTapTheDuc.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

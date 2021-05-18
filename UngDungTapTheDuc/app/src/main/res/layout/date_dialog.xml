@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+        <CheckBox
+            android:id="@+id/cbSunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chủ nhật"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <CheckBox
+            android:id="@+id/cbMonday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ hai"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <CheckBox
+            android:id="@+id/cbTuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ ba"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <CheckBox
+            android:id="@+id/cbWednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ tư"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <CheckBox
+            android:id="@+id/cbThursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ năm"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <CheckBox
+            android:id="@+id/cbFriday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ sáu"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+        <CheckBox
+            android:id="@+id/cbSaturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ bảy"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

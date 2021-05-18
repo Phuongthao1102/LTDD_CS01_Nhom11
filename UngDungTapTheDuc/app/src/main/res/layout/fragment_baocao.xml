@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/baocaoMoi"
+    tools:context=".ui.BaoCao.BaoCaoFragment">
+
+
+    <ScrollView
+        android:id="@+id/scroll_baocao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ln_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CalendarView
+                android:layout_width="398dp"
+                android:layout_height="314dp">
+
+            </CalendarView>
+            <LinearLayout
+                android:id="@+id/ln_chieucao"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_chieucao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chiều cao(cm)"
+                    android:textSize="25dp"/>
+                <EditText
+                    android:id="@+id/et_chieucao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_cannang"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cannang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cân nặng(kg)"
+                    android:textSize="25dp"/>
+                <EditText
+                    android:id="@+id/et_cannang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_gioitinh"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_gioitinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Giới tính"
+                    android:textSize="25dp"/>
+                <RadioGroup
+                    android:id="@+id/gr_gioitinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rb_nam"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Nam"
+                        android:textSize="20dp"/>
+                    <RadioButton
+                        android:id="@+id/rb_nu"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Nữ"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_chisobmi"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_captionbmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="8"
+                    android:text="Chỉ số BMI(kg/m&#178;):"
+                    android:textSize="25dp" />
+                <TextView
+                    android:id="@+id/tv_bmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:text=""
+                    android:textSize="25dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_tinhbmi"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_tinhBMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="BMI"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_nhanxet"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_nhanxet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp">
+
+                </com.github.mikephil.charting.charts.LineChart>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
